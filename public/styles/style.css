@@ -117,3 +117,14 @@ img.biu:hover {
   height: 90%;
   font-family: var(--main-fontfamily);
 }
+
+fieldset.dropdown{
+  width:95%;
+  padding:2%;
+  margin-top: 2.5%;
+  color: black;
+  border:0px solid #A4A4A4;
+  border-radius: 3px;
+  font-size:1.1vw;
+  background-color: #E8E8E8;
+}
