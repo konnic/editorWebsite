@@ -33,6 +33,7 @@ body {
 
 li {
   display: inline-block;
+  cursor: pointer;
 }
 
 li:hover {
@@ -94,7 +95,40 @@ li.workTools {
   border: none;
 }
 
-#biu2 {
+.biu{
+  transition: width 5s ease-out;
+  width: 130%;
+  height: 100%;
+  text-align: center;
+  padding: 0.25vw 0.05vw 0.25vw 0.05vw;
+  background-color: var(--hdl2-background-color);
+  border: none;
+  border-radius: var(--main-border-radius);
+}
+
+#italic  {
+  font-style: oblique;
+}
+
+#bold {
+  font-weight: bold;
+}
+
+#underlined {
+  text-decoration: underline;
+}
+
+.biu:hover {
+  box-shadow: 0 0 8px grey;
+  transform: scale(1.05);
+}
+
+.biu::selection {
+  box-shadow: 0 0 8px grey;
+  transform: scale(1.05);
+}
+
+/*#biu2 {
   min-width: 1%;
   max-width: 1%;
   min-height: 1%;
@@ -104,13 +138,7 @@ li.workTools {
 img.biu{
   height: 90%;
   width: 90%;
-  transition: width 5s ease-out;
-}
-
-img.biu:hover {
-  box-shadow: 0 0 8px rgba(255, 255, 255, 1);
-  transform: scale(1.25);
-}
+}*/
 
 #workspace {
   width: 100%;
