@@ -86,6 +86,27 @@ li.collabTools{
   font-family: var(--main-font-family);
 }
 
+li.workTools {
+  list-style: none;
+  font-size: var(--hdl2-font-size);
+  margin-left: 1vw;
+  margin-right: 0;
+  border: none;
+}
+
+#biu2 {
+  min-width: 1%;
+  max-width: 1%;
+  min-height: 1%;
+  max-height: 1%;
+}
+
+img.biu{
+  margin-top: 15%;
+  height: 90%;
+  width: 90%;
+}
+
 #workspace {
   width: 100%;
   height: 90%;
