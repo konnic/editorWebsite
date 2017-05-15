@@ -5,12 +5,15 @@
   --main-border-radius: 0.2vw;
   --main-hover-color: #2E64FE;
 
-  --main-hdl1-family: 'Oswald', sans-serif;
-  --main-hdl-height: 5%;
+  --hdl1-family: 'Oswald', sans-serif;
+  --hdl-height: 5%;
   --hdl1-background-color: #D0D0D0;
   --hdl1-font-size: 1.7vw;
 
   --hdl2-background-color: #E8E8E8;
+  --hdl2-font-size: 0.85vw;
+
+  --workspace-height: 90%;
 
 }
 
@@ -26,9 +29,9 @@ body {
 
 #headline1 {
   width: 100%;
-  height: var(--main-hdl-height);
+  height: var(--hdl-height);
   background-color: var(--hdl1-background-color);
-  font-family: var(--main-hdl1-family);
+  font-family: var(--hdl1-family);
 }
 
 li {
@@ -41,8 +44,8 @@ li:hover {
 }
 
 img.returnArrow {
-  height: 1.25%;
-  width: 1.25%;
+  height: 1%;
+  width: 1%;
   position:relative;
   margin-left: 0.3%;
   margin-top: 0.3%;
@@ -54,7 +57,6 @@ li.workmode{
   margin-left: 1vw;
   border-left: 1px;
   border-right: 1px;
-  border-color: black;
 }
 
 li.collabTools{
@@ -77,22 +79,31 @@ li.collabTools{
 
 #searchcontent:hover {
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
-  transform: scale(1.04);
+  transform: scale(1.015);
 }
 
 #headline2 {
-  width: 100%;
-  height: var(--main-hdl-height);
+  width: 70%;
+  height: var(--hdl-height);
   background-color: var(--hdl2-background-color);
   font-family: var(--main-font-family);
-  padding-left: 10%;
+  padding-left: 30%;
 }
 
 li.workTools {
   list-style: none;
   font-size: var(--hdl2-font-size);
   margin: 0.25vw 0vw 0.25vw 0.5vw;
+  border: var(--hdl1-background-color);
+}
+
+#textMode, #fontType, #fontSize, #textColor {
+  background-color: var(--hdl2-background-color);
   border: none;
+  background-color: linear-gradient(none);
+  /*-webkit-appearance: none;*/
+  font-size: var(--hdl2-font-size);
+
 }
 
 .biu{
@@ -104,23 +115,26 @@ li.workTools {
   background-color: var(--hdl2-background-color);
   border: none;
   border-radius: var(--main-border-radius);
+  font-size: var(--hdl2-font-size);
 }
 
-#italic  {
-  font-style: oblique;
+.biu:hover {
+  box-shadow: 0 0 2.5px grey;
+  transform: scale(1.01);
 }
 
 #bold {
   font-weight: bold;
 }
 
-#underlined {
-  text-decoration: underline;
+#italic  {
+  font-style: oblique;
+  padding-left: 0.25vw;
+  padding-right: 0.25vw;
 }
 
-.biu:hover {
-  box-shadow: 0 0 8px grey;
-  transform: scale(1.05);
+#underlined {
+  text-decoration: underline;
 }
 
 fieldset.dropdown{
@@ -136,6 +150,25 @@ fieldset.dropdown{
 
 #workspace {
   width: 100%;
-  height: 90%;
+  height: var(--workspace-height);
   font-family: var(--main-fontfamily);
+}
+
+#workArea {
+  border-color: var(--hdl2-background-color);
+  width: 100%;
+  bottom: 0%;
+}
+
+select.glossy{
+	background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 95% 50%;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+    /* and then whatever styles you want*/
+	height: 30px;
+	width: 100px;
+	padding: 5px;
+  margin-left:30%;
+  margin-top: 10%;
 }

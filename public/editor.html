@@ -6,7 +6,7 @@
 
   <link rel="stylesheet" type="text/css" href="styles/style.css"/>
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <!-- <script src="scripts/file.js"></script> -->
+  <script src="scripts/scripts.js"></script>
 
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -35,11 +35,11 @@
       <li class="workTools">
         <fieldset class="dropdown">
               <select id="textMode">
-                <option value = "1">Normal Text</option>
-                <option value = "2">Heading 1</option>
-                <option value = "3">Heading 2</option>
-                <option value = "4">Heading 3</option>
-                <option value = "5">Title</option>
+                <option class="dropdownStyle" value = "1">Normal Text</option>
+                <option class="dropdownStyle" value = "2">Heading 1</option>
+                <option class="dropdownStyle" value = "3">Heading 2</option>
+                <option class="dropdownStyle" value = "4">Heading 3</option>
+                <option class="dropdownStyle" value = "5">Title</option>
               </select>
         </fieldset>
       </li>
@@ -92,77 +92,57 @@
       <li class="workTools"><button class="biu" id="bold">B</button></li>
       <li class="workTools"><button class="biu" id="italic">I</button></li>
       <li class="workTools"><button class="biu" id="underlined">U</button></li>
-        <!-- <fieldset class="dropdown">
-            <label id="TESTNOW">Select a meal category.</label>
-              <select id="categoryInp">
-                <option value = "1">Snack / Appetizer</option>
-                <option value = "2">Main dish</option>
-                <option value = "3">Dessert</option>
-                <option value = "4">Beverage</option>
+      <li class="workTools">
+        <fieldset class="dropdown">
+              <select id="textColor">
+                <option value = "1">text orientation</option>
               </select>
-        </fieldset> -->
+        </fieldset>
       </li>
       <li class="workTools">
-        <!-- <fieldset class="dropdown">
-            <label id="TESTNOW">Select a meal category.</label>
-              <select id="categoryInp">
-                <option value = "1">Snack / Appetizer</option>
-                <option value = "2">Main dish</option>
-                <option value = "3">Dessert</option>
-                <option value = "4">Beverage</option>
+        <fieldset class="dropdown">
+              <select id="textColor">
+                <option value = "1">ul</option>
               </select>
-        </fieldset> -->
+        </fieldset>
       </li>
       <li class="workTools">
-        <!-- <fieldset class="dropdown">
-            <label id="TESTNOW">Select a meal category.</label>
-              <select id="categoryInp">
-                <option value = "1">Snack / Appetizer</option>
-                <option value = "2">Main dish</option>
-                <option value = "3">Dessert</option>
-                <option value = "4">Beverage</option>
+        <fieldset class="dropdown">
+              <select id="textColor">
+                <option value = "1">ol</option>
               </select>
-        </fieldset> -->
+        </fieldset>
       </li>
       <li class="workTools">
-        <!-- <fieldset class="dropdown">
-            <label id="TESTNOW">Select a meal category.</label>
-              <select id="categoryInp">
-                <option value = "1">Snack / Appetizer</option>
-                <option value = "2">Main dish</option>
-                <option value = "3">Dessert</option>
-                <option value = "4">Beverage</option>
+        <fieldset class="dropdown">
+              <select id="textColor">
+                <option value = "1">table</option>
               </select>
-        </fieldset> -->
+        </fieldset>
       </li>
       <li class="workTools">
-        <!-- <fieldset class="dropdown">
-            <label id="TESTNOW">Select a meal category.</label>
-              <select id="categoryInp">
-                <option value = "1">Snack / Appetizer</option>
-                <option value = "2">Main dish</option>
-                <option value = "3">Dessert</option>
-                <option value = "4">Beverage</option>
+        <fieldset class="dropdown">
+              <select id="textColor">
+                <option value = "1">pic</option>
               </select>
-        </fieldset> -->
+        </fieldset>
       </li>
       <li class="workTools">
-        <!-- <fieldset class="dropdown">
-            <label id="TESTNOW">Select a meal category.</label>
-              <select id="categoryInp">
-                <option value = "1">Snack / Appetizer</option>
-                <option value = "2">Main dish</option>
-                <option value = "3">Dessert</option>
-                <option value = "4">Beverage</option>
+        <fieldset class="dropdown">
+              <select id="textColor">
+                <option value = "1">zoom</option>
               </select>
-        </fieldset> -->
+        </fieldset>
       </li>
       <!--10 von 13 li sind dropdowns...-->
     </ul>
   </div>
 
   <div id="workspace">
-    <textarea width="90%">This is the workspace!</textarea>
+    <select class="glossy">
+      <option value="1">Dropdown</option>
+      <option value="1">Dropdown</option>
+      <option value="1">Dropdown</option>
   </div>
 
 </body>
